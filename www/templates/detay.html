@@ -1,0 +1,27 @@
+<ion-view view-title="{{ detay.Title }}">
+  <ion-content class="padding">
+    <div class="list card">
+
+  <div class="item item-avatar">
+    <img src="{{ detay.Poster }}">
+    <h2>{{ detay.Title }}</h2>
+    <p>{{ detay.Released }}</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="{{ detay.Date }}">
+    <p>
+      <b>Aktörler : </b><i> {{ detay.Actors }} </i><br>
+      <b>Yazar : </b><i>  {{ detay.Writer }} </i><br>
+      <b>Ülke : </b><i> {{ detay.Country }} </i><br>
+      <b>Dil : </b><i>  {{ detay.Language }} </i><br>
+      <b>Süre : </b><i> {{ detay.Runtime }} </i><br>
+    </p>
+    <p>
+      {{ detay.Plot }}
+    </p>
+  </div>
+
+</div>
+  </ion-content>
+</ion-view>

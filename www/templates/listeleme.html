@@ -1,0 +1,14 @@
+<ion-view view-title="{{ aranan }} aramasının sonuc">
+  <ion-content>
+    <ion-list>
+      <div ng-repeat="film in filmler.Search">
+        <a class="item item-thumbnail-left" href="#/tab/detay/{{ film.imdbID }}">
+          <img src="{{ film.Poster }}">
+          <h2>{{ film.Title }}</h2>
+          <i>Yayın Tarihi:</i><b> {{ film.Year }} </b>
+        </a>
+</div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
